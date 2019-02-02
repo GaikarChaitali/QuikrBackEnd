@@ -1,0 +1,10 @@
+zuul:
+  prefix: /api
+  routes:
+    account: 
+      path: /producer/**
+      serviceId: productproducer
+    customer: 
+      path: /consumer/**
+      serviceId: productconsumer
+   
